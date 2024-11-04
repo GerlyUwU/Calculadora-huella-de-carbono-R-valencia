@@ -1,23 +1,85 @@
-
-
-title{
-    color:  #000;
-    text-align: center;
-    font-family: Inter;
-    font-size: 64px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
+/* Estilo del contenedor del título y subtítulo */
+.titulo-contenedor {
+    position: relative; /* Asegúrate de que el contenedor tenga posicionamiento relativo */
+    width: 553px; /* Ancho fijo */
+    height: auto; /* Cambia a auto para que ajuste según el contenido */
+    top: 194px; /* Posición desde la parte superior */
+    left: 97px; /* Posición desde la izquierda */
+    display: flex; /* Habilitar flexbox */
+    flex-direction: column; /* Organiza los elementos en columna */
+    align-items: center; /* Alinear horizontalmente al centro */
+    justify-content: center; /* Alinear verticalmente al centro */
+    text-align: center; /* Centrar texto dentro del contenedor */
+    opacity: 1; /* Asegúrate de que sea visible */
 }
 
+/* Estilo del título */
+#title {
+    color: #000; /* Color del texto */
+    font-family: 'Inter', sans-serif; /* Fuente Inter */
+    font-size: 64px; /* Tamaño de fuente */
+    font-weight: 600; /* Peso de la fuente */
+    line-height: 77.45px; /* Altura de línea */
+    margin: 0; /* Eliminar márgenes por defecto del h1 */
+}
 
-.logo{
-    width: 200px;          /* Ancho del div */
-    height: 100px;        /* Alto del div */
-    background-color: #4CAF50; /* Color de fondo (verde) */
-    color: white;         /* Color del texto */
-    display: flex;        /* Centrar contenido */
-    align-items: center;  /* Centrar verticalmente */
-    justify-content: center; /* Centrar horizontalmente */
-    border: 2px solid #333; /* Borde para identificar mejor */
+/* Estilo del subtítulo */
+.subtitulo {
+    color: #AEBF8A;
+    width: 688px; /* Ancho fijo */
+    height: auto; /* Cambia a auto para que ajuste según el contenido */
+    margin-top: 10px; /* Espacio entre el título y el subtítulo */
+    opacity: 1; /* Asegúrate de que la opacidad sea 1 para que se vea */
+    font-family: 'Inter', sans-serif; /* Tipografía Inter */
+    font-size: 24px; /* Tamaño de fuente */
+    font-weight: 600; /* Peso de fuente */
+    line-height: 29.05px; /* Altura de línea */
+    text-align: center; /* Alineación de texto al centro */
+}
+
+/* Estilo para el logo */
+.logo {
+    display: flex; /* Usar flexbox para alinear el logo y el texto en línea */
+    align-items: center; /* Alinear verticalmente en el centro */
+}
+
+.logo h2 {
+    color: #000; /* Color del texto */
+    text-align: center; /* Alinear texto al centro */
+    font-family: 'Inter', sans-serif; /* Fuente Inter */
+    font-size: 32px; /* Tamaño de fuente */
+    font-style: normal; /* Estilo normal */
+    font-weight: 600; /* Peso de la fuente (ajusta según sea necesario) */
+    line-height: normal; /* Altura de línea normal */
+    margin-left: 10px; /* Espaciado a la izquierda del texto */
+}
+
+/* Estilo del contenedor de la imagen */
+#imagen-contenedor {
+    position: relative; /* Asegúrate de que el contenedor tenga posición relativa */
+    width: 512px; /* Ancho fijo */
+    height: 512px; /* Alto fijo */
+    display: flex; /* Flexbox para centrar la imagen */
+    align-items: center; /* Alinear verticalmente al centro */
+    justify-content: center; /* Alinear horizontalmente al centro */
+    margin: 20px auto; /* Márgenes automáticos para centrar */
+}
+
+/* Estilo para el vector */
+.vector {
+    position: absolute; /* Permitir que el vector se posicione respecto al contenedor */
+    width: 588.04px; /* Ancho fijo del vector */
+    height: 560.84px; /* Alto fijo del vector */
+    top: -3.77px; /* Posición desde arriba */
+    left: -37.51px; /* Posición desde la izquierda */
+    opacity: 1; /* Cambia a 1 para que sea visible */
+}
+
+/* Estilo para la imagen */
+.cal {
+    width: 100%; /* Ancho completo */
+    height: auto; /* Altura automática */
+    display: block; /* Para asegurarse de que la imagen se comporte como un bloque */
+    position: relative; /* Asegúrate de que la imagen esté en la parte superior */
+    z-index: 1; /* Asegura que la imagen esté por encima del SVG */
 }
