@@ -83,3 +83,36 @@
     position: relative; /* Asegúrate de que la imagen esté en la parte superior */
     z-index: 1; /* Asegura que la imagen esté por encima del SVG */
 }
+
+.botoncito {
+    position: relative; /* Asegura que el contenedor tenga un contexto de posicionamiento */
+    text-align: center; /* Centra el texto dentro del contenedor */
+    margin: 0 auto; /* Centrar el contenedor en el espacio disponible */
+}
+
+/* Estilo del botón */
+.boton {
+    display: flex; /* Habilitar flexbox para centrar el contenido */
+    width: 202px; /* Ancho fijo */
+    height: 58px; /* Alto fijo */
+    padding: 14px 41px 15px 39px; /* Espaciado interno */
+    justify-content: center; /* Centrar contenido horizontalmente */
+    align-items: center; /* Centrar contenido verticalmente */
+    flex-shrink: 0; /* Evitar que el botón se reduzca */
+    border-radius: 3px; /* Bordes redondeados */
+    background: #294028; /* Color de fondo directo (verde maduro) */
+    color: #fff; /* Color del texto */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
+    font-family: 'Inter', sans-serif; /* Tipografía */
+    font-size: 16px; /* Tamaño de fuente (ajusta según sea necesario) */
+    margin-top: 20px; /* Espacio entre el subtítulo y el botón */
+    margin-left: auto; /* Margin left para centrar */
+    margin-right: auto; /* Margin right para centrar */
+    opacity: 1; /* Asegúrate de que sea visible */
+}
+
+/* Agregar un efecto al pasar el mouse (opcional) */
+.boton:hover {
+    opacity: 0.9; /* Cambiar la opacidad al pasar el mouse (opcional) */
+}
