@@ -1,0 +1,23 @@
+
+
+title{
+    color:  #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+
+.logo{
+    width: 200px;          /* Ancho del div */
+    height: 100px;        /* Alto del div */
+    background-color: #4CAF50; /* Color de fondo (verde) */
+    color: white;         /* Color del texto */
+    display: flex;        /* Centrar contenido */
+    align-items: center;  /* Centrar verticalmente */
+    justify-content: center; /* Centrar horizontalmente */
+    border: 2px solid #333; /* Borde para identificar mejor */
+}
