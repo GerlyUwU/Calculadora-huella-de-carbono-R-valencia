@@ -1,144 +1,237 @@
 /* Estilo del contenedor del título y subtítulo */
 .titulo-contenedor {
-    position: relative; /* Asegúrate de que el contenedor tenga posicionamiento relativo */
-    width: 553px; /* Ancho fijo */
-    height: auto; /* Cambia a auto para que ajuste según el contenido */
-    top: 194px; /* Posición desde la parte superior */
-    left: 97px; /* Posición desde la izquierda */
-    display: flex; /* Habilitar flexbox */
-    flex-direction: column; /* Organiza los elementos en columna */
-    align-items: center; /* Alinear horizontalmente al centro */
-    justify-content: center; /* Alinear verticalmente al centro */
-    text-align: center; /* Centrar texto dentro del contenedor */
-    opacity: 1; /* Asegúrate de que sea visible */
+    position: relative;
+    /* Asegúrate de que el contenedor tenga posicionamiento relativo */
+    width: 553px;
+    /* Ancho fijo */
+    height: auto;
+    /* Cambia a auto para que ajuste según el contenido */
+    top: 194px;
+    /* Posición desde la parte superior */
+    left: 97px;
+    /* Posición desde la izquierda */
+    display: flex;
+    /* Habilitar flexbox */
+    flex-direction: column;
+    /* Organiza los elementos en columna */
+    align-items: center;
+    /* Alinear horizontalmente al centro */
+    justify-content: center;
+    /* Alinear verticalmente al centro */
+    text-align: center;
+    /* Centrar texto dentro del contenedor */
+    opacity: 1;
+    /* Asegúrate de que sea visible */
 }
 
 /* Estilo del título */
 #title {
-    color: #000; /* Color del texto */
-    font-family: 'Inter', sans-serif; /* Fuente Inter */
-    font-size: 64px; /* Tamaño de fuente */
-    font-weight: 600; /* Peso de la fuente */
-    line-height: 77.45px; /* Altura de línea */
-    margin: 0; /* Eliminar márgenes por defecto del h1 */
+    color: #000;
+    /* Color del texto */
+    font-family: 'Inter', sans-serif;
+    /* Fuente Inter */
+    font-size: 64px;
+    /* Tamaño de fuente */
+    font-weight: 600;
+    /* Peso de la fuente */
+    line-height: 77.45px;
+    /* Altura de línea */
+    margin: 0;
+    /* Eliminar márgenes por defecto del h1 */
+    text-align: center;
 }
 
 /* Estilo del subtítulo */
 .subtitulo {
     color: #AEBF8A;
-    width: 688px; /* Ancho fijo */
-    height: auto; /* Cambia a auto para que ajuste según el contenido */
-    margin-top: 10px; /* Espacio entre el título y el subtítulo */
-    opacity: 1; /* Asegúrate de que la opacidad sea 1 para que se vea */
-    font-family: 'Inter', sans-serif; /* Tipografía Inter */
-    font-size: 24px; /* Tamaño de fuente */
-    font-weight: 600; /* Peso de fuente */
-    line-height: 29.05px; /* Altura de línea */
-    text-align: center; /* Alineación de texto al centro */
+    width: 688px;
+    /* Ancho fijo */
+    height: auto;
+    /* Cambia a auto para que ajuste según el contenido */
+    margin-top: 10px;
+    /* Espacio entre el título y el subtítulo */
+    opacity: 1;
+    /* Asegúrate de que la opacidad sea 1 para que se vea */
+    font-family: 'Inter', sans-serif;
+    /* Tipografía Inter */
+    font-size: 24px;
+    /* Tamaño de fuente */
+    font-weight: 600;
+    /* Peso de fuente */
+    line-height: 29.05px;
+    /* Altura de línea */
+    text-align: center;
+    /* Alineación de texto al centro */
     margin-left: 5%;
     margin-bottom: 10vh;
 }
 
-/* Estilo para el logo */
+/* Contenedor principal que alinea logo y h1 en la misma línea */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Espacia logo/h2 a la izquierda y h1 a la derecha */
+    padding: 10px;
+}
+
+/* Estilo para el logo y el h2 */
 .logo {
-    display: flex; /* Usar flexbox para alinear el logo y el texto en línea */
-    align-items: center; /* Alinear verticalmente en el centro */
+    display: flex;
+    align-items: center;
 }
 
 .logo h2 {
-    color: #000; /* Color del texto */
-    text-align: center; /* Alinear texto al centro */
-    font-family: 'Inter', sans-serif; /* Fuente Inter */
-    font-size: 32px; /* Tamaño de fuente */
-    font-style: normal; /* Estilo normal */
-    font-weight: 600; /* Peso de la fuente (ajusta según sea necesario) */
-    line-height: normal; /* Altura de línea normal */
-    margin-left: 10px; /* Espaciado a la izquierda del texto */
+    color: #000;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    margin-left: 10px;
 }
 
+/* Estilo para el h1 */
+h1 {
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    font-weight: thin;
+    margin: 0;
+    text-align: right;
+    color: #294028;
+
+}
+
+
+#txtP{
+    text-align: center;
+    line-height: 77.45px;
+    font-family: 'Inter', sans-serif;
+    font-size: 64px;
+    margin-top: 100px;
+    color: black; 
+}
 /* Estilo del contenedor de la imagen */
 #imagen-contenedor {
-    position: relative; /* Asegúrate de que el contenedor tenga posición relativa */
-    width: 512px; /* Ancho fijo */
-    height: 512px; /* Alto fijo */
-    display: flex; /* Flexbox para centrar la imagen */
-    margin-left: 35%; 
-    opacity: 1; /* Asegúrate de que sea visible */
+    position: relative;
+    /* Asegúrate de que el contenedor tenga posición relativa */
+    width: 512px;
+    /* Ancho fijo */
+    height: 512px;
+    /* Alto fijo */
+    display: flex;
+    /* Flexbox para centrar la imagen */
+    margin-left: 35%;
+    opacity: 1;
+    /* Asegúrate de que sea visible */
     margin-bottom: 10vh;
 }
 
 /* Estilo para el vector */
 .vector {
-    position: absolute; /* Permitir que el vector se posicione respecto al contenedor */
-    width: 588.04px; /* Ancho fijo del vector */
-    height: 560.84px; /* Alto fijo del vector */
-    top: -3.77px; /* Posición desde arriba */
-    left: -37.51px; /* Posición desde la izquierda */
-    opacity: 1; /* Cambia a 1 para que sea visible */
+    position: absolute;
+    /* Permitir que el vector se posicione respecto al contenedor */
+    width: 588.04px;
+    /* Ancho fijo del vector */
+    height: 560.84px;
+    /* Alto fijo del vector */
+    top: -3.77px;
+    /* Posición desde arriba */
+    left: -37.51px;
+    /* Posición desde la izquierda */
+    opacity: 1;
+    /* Cambia a 1 para que sea visible */
     margin-left: 50%;
-    
+
 }
 
 /* Estilo para la imagen */
 .cal {
-    width: 100%; /* Ancho completo */
-    height: auto; /* Altura automática */
-    display: block; /* Para asegurarse de que la imagen se comporte como un bloque */
-    position: relative; /* Asegúrate de que la imagen esté en la parte superior */
-    z-index: 1; /* Asegura que la imagen esté por encima del SVG */
+    width: 100%;
+    /* Ancho completo */
+    height: auto;
+    /* Altura automática */
+    display: block;
+    /* Para asegurarse de que la imagen se comporte como un bloque */
+    position: relative;
+    /* Asegúrate de que la imagen esté en la parte superior */
+    z-index: 1;
+    /* Asegura que la imagen esté por encima del SVG */
     margin-left: 50%;
-    
+
 }
 
 .botoncito {
-    position: relative; /* Asegura que el contenedor tenga un contexto de posicionamiento */
-    text-align: center; /* Centra el texto dentro del contenedor */
-    margin: 0 auto; /* Centrar el contenedor en el espacio disponible */
+    position: relative;
+    /* Asegura que el contenedor tenga un contexto de posicionamiento */
+    text-align: center;
+    /* Centra el texto dentro del contenedor */
+    margin: 0 auto;
+    /* Centrar el contenedor en el espacio disponible */
 }
 
 /* Estilo del botón */
 .boton {
-    display: flex; /* Habilitar flexbox para centrar el contenido */
-    width: 202px; /* Ancho fijo */
-    height: 58px; /* Alto fijo */
-    padding: 14px 41px 15px 39px; /* Espaciado interno */
-    justify-content: center; /* Centrar contenido horizontalmente */
-    align-items: center; /* Centrar contenido verticalmente */
-    flex-shrink: 0; /* Evitar que el botón se reduzca */
-    border-radius: 3px; /* Bordes redondeados */
-    background: #294028; /* Color de fondo directo (verde maduro) */
-    color: #fff; /* Color del texto */
-    border: none; /* Sin borde */
-    cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
-    font-family: 'Inter', sans-serif; /* Tipografía */
-    font-size: 16px; /* Tamaño de fuente (ajusta según sea necesario) */
-    margin-top: 20px; /* Espacio entre el subtítulo y el botón */
-    margin-left: auto; /* Margin left para centrar */
-    margin-right: auto; /* Margin right para centrar */
-    opacity: 1; /* Asegúrate de que sea visible */
+    display: flex;
+    /* Habilitar flexbox para centrar el contenido */
+    width: 202px;
+    /* Ancho fijo */
+    height: 58px;
+    /* Alto fijo */
+    padding: 14px 41px 15px 39px;
+    /* Espaciado interno */
+    justify-content: center;
+    /* Centrar contenido horizontalmente */
+    align-items: center;
+    /* Centrar contenido verticalmente */
+    flex-shrink: 0;
+    /* Evitar que el botón se reduzca */
+    border-radius: 3px;
+    /* Bordes redondeados */
+    background: #294028;
+    /* Color de fondo directo (verde maduro) */
+    color: #fff;
+    /* Color del texto */
+    border: none;
+    /* Sin borde */
+    cursor: pointer;
+    /* Cambiar el cursor al pasar sobre el botón */
+    font-family: 'Inter', sans-serif;
+    /* Tipografía */
+    font-size: 16px;
+    /* Tamaño de fuente (ajusta según sea necesario) */
+    margin-top: 20px;
+    /* Espacio entre el subtítulo y el botón */
+    margin-left: auto;
+    /* Margin left para centrar */
+    margin-right: auto;
+    /* Margin right para centrar */
+    opacity: 1;
+    /* Asegúrate de que sea visible */
 }
 
 /* Agregar un efecto al pasar el mouse (opcional) */
 .boton:hover {
-    opacity: 0.9; /* Cambiar la opacidad al pasar el mouse (opcional) */
+    opacity: 0.9;
+    /* Cambiar la opacidad al pasar el mouse (opcional) */
 }
 
-.titulo1{
+.titulo1 {
     text-align: center;
 }
 
 
-#subtituloMain{
+#subtituloMain {
     text-align: center;
     margin-top: 10vh;
     margin-bottom: 10vh;
-    font-family: 'Inter', sans-serif; 
+    font-family: 'Inter', sans-serif;
     font-size: 24px;
 }
+
 .menu {
     display: flex;
     justify-content: center;
-    align-items: flex-end; /* Alinea la base de las imágenes */
+    align-items: flex-end;
+    /* Alinea la base de las imágenes */
     gap: 220px;
     margin-top: 20px;
     margin-bottom: 10vh;
@@ -152,14 +245,17 @@
 }
 
 .menu img {
-    width: 200px; /* Tamaño estándar para las imágenes */
+    width: 200px;
+    /* Tamaño estándar para las imágenes */
     height: 200px;
-   
+
     transition: transform 0.3s ease;
 }
 
-.menu figure:nth-child(2) img { /* Selecciona la imagen del medio */
-    width: 350px; /* Aumenta el tamaño de la imagen central */
+.menu figure:nth-child(2) img {
+    /* Selecciona la imagen del medio */
+    width: 350px;
+    /* Aumenta el tamaño de la imagen central */
     height: 350px;
 }
 
@@ -167,18 +263,24 @@
     margin-top: 10px;
     font-size: 16px;
     color: #333;
-    font-family: 'Inter', sans-serif; /* Tipografía Inter */
-    font-size: 24px; /* Tamaño de fuente */
-    font-weight: 600; /* Peso de fuente */
-    line-height: 29.05px; /* Altura de línea */
-    text-align: center; /* Alineación de texto al centro */
+    font-family: 'Inter', sans-serif;
+    /* Tipografía Inter */
+    font-size: 24px;
+    /* Tamaño de fuente */
+    font-weight: 600;
+    /* Peso de fuente */
+    line-height: 29.05px;
+    /* Altura de línea */
+    text-align: center;
+    /* Alineación de texto al centro */
     margin-left: 5%;
-   
+
 }
 
 .menu img:hover {
     transform: scale(1.1);
 }
+
 #btn1,
 p {
     text-align: center;
@@ -191,6 +293,8 @@ p {
 }
 
 #btn1 a {
-    text-decoration: none; /* Quita el subrayado */
-    color: inherit;        /* Hereda el color del contenedor */
+    text-decoration: none;
+    /* Quita el subrayado */
+    color: inherit;
+    /* Hereda el color del contenedor */
 }
