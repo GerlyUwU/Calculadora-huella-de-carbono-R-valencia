@@ -76,6 +76,7 @@
     left: -37.51px; /* Posición desde la izquierda */
     opacity: 1; /* Cambia a 1 para que sea visible */
     margin-left: 50%;
+    
 }
 
 /* Estilo para la imagen */
@@ -120,4 +121,40 @@
 /* Agregar un efecto al pasar el mouse (opcional) */
 .boton:hover {
     opacity: 0.9; /* Cambiar la opacidad al pasar el mouse (opcional) */
+}
+
+.titulo1{
+    text-align: center;
+}
+
+
+#subtituloMain{
+    text-align: center;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    font-family: 'Inter', sans-serif; 
+    font-size: 24px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 100px; /* Espacio entre las imágenes */
+    margin-top: 20px;/* Espacio entre el subtítulo y las imágenes */
+    margin-right: 10%;
+}
+
+.menu a {
+    display: inline-block;
+}
+
+.menu img {
+    width: 200px; /* Ajusta el tamaño según tus necesidades */
+    height: 200px;
+    
+    transition: transform 0.3s ease;
+}
+
+.menu img:hover {
+    transform: scale(1.1); /* Efecto al pasar el mouse */
 }
