@@ -135,26 +135,62 @@
     font-family: 'Inter', sans-serif; 
     font-size: 24px;
 }
-
 .menu {
     display: flex;
     justify-content: center;
-    gap: 100px; /* Espacio entre las imágenes */
-    margin-top: 20px;/* Espacio entre el subtítulo y las imágenes */
-    margin-right: 10%;
+    align-items: flex-end; /* Alinea la base de las imágenes */
+    gap: 220px;
+    margin-top: 20px;
+    margin-bottom: 10vh;
 }
 
-.menu a {
-    display: inline-block;
+.menu figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
 }
 
 .menu img {
-    width: 200px; /* Ajusta el tamaño según tus necesidades */
+    width: 200px; /* Tamaño estándar para las imágenes */
     height: 200px;
-    
+   
     transition: transform 0.3s ease;
 }
 
+.menu figure:nth-child(2) img { /* Selecciona la imagen del medio */
+    width: 350px; /* Aumenta el tamaño de la imagen central */
+    height: 350px;
+}
+
+.menu figcaption {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+    font-family: 'Inter', sans-serif; /* Tipografía Inter */
+    font-size: 24px; /* Tamaño de fuente */
+    font-weight: 600; /* Peso de fuente */
+    line-height: 29.05px; /* Altura de línea */
+    text-align: center; /* Alineación de texto al centro */
+    margin-left: 5%;
+   
+}
+
 .menu img:hover {
-    transform: scale(1.1); /* Efecto al pasar el mouse */
+    transform: scale(1.1);
+}
+#btn1,
+p {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10vh;
+    color: #AEBF8A;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+#btn1 a {
+    text-decoration: none; /* Quita el subrayado */
+    color: inherit;        /* Hereda el color del contenedor */
 }
