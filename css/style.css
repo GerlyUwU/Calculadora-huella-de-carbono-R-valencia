@@ -35,6 +35,8 @@
     font-weight: 600; /* Peso de fuente */
     line-height: 29.05px; /* Altura de línea */
     text-align: center; /* Alineación de texto al centro */
+    margin-left: 5%;
+    margin-bottom: 10vh;
 }
 
 /* Estilo para el logo */
@@ -60,9 +62,9 @@
     width: 512px; /* Ancho fijo */
     height: 512px; /* Alto fijo */
     display: flex; /* Flexbox para centrar la imagen */
-    align-items: center; /* Alinear verticalmente al centro */
-    justify-content: center; /* Alinear horizontalmente al centro */
-    margin: 20px auto; /* Márgenes automáticos para centrar */
+    margin-left: 35%; 
+    opacity: 1; /* Asegúrate de que sea visible */
+    margin-bottom: 10vh;
 }
 
 /* Estilo para el vector */
@@ -73,6 +75,7 @@
     top: -3.77px; /* Posición desde arriba */
     left: -37.51px; /* Posición desde la izquierda */
     opacity: 1; /* Cambia a 1 para que sea visible */
+    margin-left: 50%;
 }
 
 /* Estilo para la imagen */
@@ -82,6 +85,8 @@
     display: block; /* Para asegurarse de que la imagen se comporte como un bloque */
     position: relative; /* Asegúrate de que la imagen esté en la parte superior */
     z-index: 1; /* Asegura que la imagen esté por encima del SVG */
+    margin-left: 50%;
+    
 }
 
 .botoncito {
