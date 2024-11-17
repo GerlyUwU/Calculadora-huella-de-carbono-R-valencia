@@ -70,7 +70,8 @@
 .container {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Espacia logo/h2 a la izquierda y h1 a la derecha */
+    justify-content: space-between;
+    /* Espacia logo/h2 a la izquierda y h1 a la derecha */
     padding: 10px;
 }
 
@@ -101,14 +102,15 @@ h1 {
 }
 
 
-#txtP{
+#txtP {
     text-align: center;
     line-height: 77.45px;
     font-family: 'Inter', sans-serif;
     font-size: 64px;
     margin-top: 100px;
-    color: black; 
+    color: black;
 }
+
 /* Estilo del contenedor de la imagen */
 #imagen-contenedor {
     position: relative;
@@ -297,4 +299,38 @@ p {
     /* Quita el subrayado */
     color: inherit;
     /* Hereda el color del contenedor */
+}
+
+#parrafoMain {
+    font-family: 'Inter', sans-serif;
+    margin-top: 10vh;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: black;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 38.73px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+#parrafoMain1 {
+
+    font-family: 'Inter', sans-serif;
+    margin-top: 10vh;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 38.73px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: black;
+
 }
