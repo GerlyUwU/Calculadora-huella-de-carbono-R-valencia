@@ -334,3 +334,74 @@ p {
     color: black;
 
 }
+
+#hola {
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 38.73px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+}
+
+#botones {
+    display: flex;
+    justify-content: flex-start; /* Alinea los botones a la izquierda */
+    align-items: center; /* Alinea verticalmente los botones al centro */
+    gap: 100px; /* Espacio entre los botones */
+    margin-top: 20px;
+    margin-bottom: 10vh;
+    margin-left: 65%;
+}
+
+
+/* Estilo del botón */
+.boton_main {
+    display: flex;
+    /* Habilitar flexbox para centrar el contenido */
+    width: 202px;
+    /* Ancho fijo */
+    height: 58px;
+    /* Alto fijo */
+    padding: 14px 41px 15px 39px;
+    /* Espaciado interno */
+    justify-content: center;
+    /* Centrar contenido horizontalmente */
+    align-items: center;
+    /* Centrar contenido verticalmente */
+    flex-shrink: 0;
+    /* Evitar que el botón se reduzca */
+    border-radius: 3px;
+    /* Bordes redondeados */
+    background: #95BF39;
+    /* Color de fondo directo (verde maduro) */
+    color: #fff;
+    /* Color del texto */
+    border: none;
+    /* Sin borde */
+    cursor: pointer;
+    /* Cambiar el cursor al pasar sobre el botón */
+    font-family: 'Inter', sans-serif;
+    /* Tipografía */
+    font-size: 16px;
+    /* Tamaño de fuente (ajusta según sea necesario) */
+    margin-top: 20px;
+    /* Espacio entre el subtítulo y el botón */
+    margin-left: auto;
+    /* Margin left para centrar */
+    margin-right: auto;
+    /* Margin right para centrar */
+    opacity: 1;
+    /* Asegúrate de que sea visible */
+}
+#botones a {
+    text-decoration: none; /* Elimina el subrayado del enlace */
+}
+
+/* Agregar un efecto al pasar el mouse (opcional) */
+.boton_main:hover {
+    opacity: 0.9;
+    /* Cambiar la opacidad al pasar el mouse (opcional) */
+}
