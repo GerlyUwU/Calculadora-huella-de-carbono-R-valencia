@@ -181,6 +181,88 @@
                 </select>
                 <br><br><br>
             </div>
+            <!-- Sección 4: Compras y estilo de vida -->
+            <h1 class="titulo2">Sección 4: Compras y estilo de vida</h1>
+            <p id="calcio">Preguntas sobre hábitos de consumo y productos
+                adquiridos:</p>
+            <div class="imagenRepre">
+                <img src="/Images/compras.png" alt="Foco" width="500"
+                    height="500">
+            </div>
+            <div class="preguntas">
+                <h1>¿Con qué frecuencia compras ropa nueva?</h1>
+                <br><br>
+                <select id="frecuencia_compra_ropa" class="menu-desplegable">
+                    <option value>-- Selecciona --</option>
+                    <option value="1">Mensualmente </option>
+                    <option value="2">Cada 3-6 meses</option>
+                    <option value="3">Raramente</option>
+                </select>
+                <br><br><br>
+                <h1>¿Con qué frecuencia compras productos electrónicos?</h1>
+                <br><br>
+                <select id="frecuencia_compra_elect" class="menu-desplegable">
+                    <option value>-- Selecciona --</option>
+                    <option value="1">Mensualmente </option>
+                    <option value="2">Anuelmente</option>
+                    <option value="3">Solo cuando es necesario</option>
+                </select>
+                <br><br><br>
+                <h1>¿Reutilizas o reciclas productos en tu hogar?</h1>
+                <br><br>
+                <select id="frecuencia_reciclaje" class="menu-desplegable">
+                    <option value>-- Selecciona --</option>
+                    <option value="1">Siempre</option>
+                    <option value="2">A veces</option>
+                    <option value="3">Nunca</option>
+                </select>
+                <br><br><br>
+            </div>
+
+            <!-- Sección 5: Residuos  -->
+            <h1 class="titulo2">Sección 5: Residuos</h1>
+            <p>Preguntas para conocer la generación y manejo de residuos:</p>
+            <div class="imagenRepre">
+                <img src="/Images/basura.png" alt="Foco" width="500"
+                    height="500">
+            </div>
+            <div class="preguntas">
+                <h1>¿Separas tus residuos (orgánicos, plásticos, etc.)?</h1>
+                <br><br>
+                <select id="separar_residuos" class="menu-desplegable">
+                    <option value>-- Selecciona --</option>
+                    <option value="1">Siempre</option>
+                    <option value="2">A veces</option>
+                    <option value="3">Nunca</option>
+                </select>
+                <br><br><br>
+                <h1>¿Cuántas bolsas de basura generas por semana?</h1>
+                <br><br>
+                <select id="bolsas_basura" class="menu-desplegable">
+                    <option value>-- Selecciona --</option>
+                    <option value="1">1</option>
+                    <option value="2">2-3</option>
+                    <option value="3">Más de 3</option>
+                </select>
+                <br><br><br>
+                <h1>¿Compostas residuos orgánicos?</h1>
+                <form>
+                    <p>Selecciona una opción:</p>
+                    <label>
+                        <input type="radio" name="uso-ac" value="No" checked>
+                        Si
+                    </label><br><br>
+                    <label>
+                        <input type="radio" name="uso-ac"
+                            value="No"> No
+                    </label><br><br>
+                </form>
+                <br><br><br>
+            </div>
+            <div>
+                <button id="boton_calcular" type="submit">Calcular</button>
+            </div>
+            <br><br>
         </main>
         <footer class="footerMain">
             <br>
