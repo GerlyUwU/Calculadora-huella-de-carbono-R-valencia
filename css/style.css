@@ -503,3 +503,11 @@ p {
 #camion{
   margin-left: 250%;
 }
+
+.footerMain{
+    text-align: center;
+    background-color: #294028;
+    width: 100%;
+    height: 100px;
+
+}
