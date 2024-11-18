@@ -1,135 +1,121 @@
 <!DOCTYPE html>
-<html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link
-            href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap"
-            rel="stylesheet">
-        <link rel="stylesheet" href="/css/style.css">
-        <title>Formulario huella de carbono</title>
-    </head>
-    <body>
-        <header>
-            <div class="logo">
-                <!-- el div del logo, se explica muy bien con el div  -->
-                <img
-                    src="/Images/kisspng-computer-icons-leaf-natural-environment-ecology-natureflower-5b322fa48ffc25.5248581315300156525898.png"
-                    alt="Logo" width="100" height="100">
-                <h2>R Valencia</h2>
-                <img id="logoSecundario"
-                    src="/Images/calculadora.png"
-                    alt="Logo" width="100" height="100">
-            </div>
-        </header>
-        <main>
+<html lang="en">
 
-            <div class="titulo1">
-                <h1 id="title">Hora de empezar con esto...</h1>
-            </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
+    <link rel="icon" href="/Images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Formulario Huella de Carbono</title>
+</head>
 
-            <p id="subtituloMain">Responde a cada seccion del siguiente
-                formulario para poder calcular tu huella de carbono </p>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/Images/kisspng-computer-icons-leaf-natural-environment-ecology-natureflower-5b322fa48ffc25.5248581315300156525898.png" alt="Logo" width="100" height="100">
+            <h2>R Valencia</h2>
+            <img id="logoSecundario" src="/Images/calculadora.png" alt="Logo" width="100" height="100">
+        </div>
+    </header>
 
-            <h1 class="titulo2">Seccion 1: Consumo de energia </h1>
+    <main>
+        <div class="titulo1">
+            <h1 id="title">Hora de empezar con esto...</h1>
+        </div>
 
-             <!--preguntas sobre consumo de energia -->
+        <p id="subtituloMain">Responde a cada sección del siguiente formulario para poder calcular tu huella de carbono</p>
 
-            <div class="preguntas">
-                <h1>¿Cuántos kilovatios hora (kWh) consumes al mes?</h1>
-                <p>Esta informacion la puedes encontrar en tu recibo de energia
-                    electrica</p>
+        <!-- Sección 1: Consumo de energía -->
+        <h1 class="titulo2">Sección 1: Consumo de Energía</h1>
+        <div class="preguntas">
+            <h1>¿Cuántos kilovatios hora (kWh) consumes al mes?</h1>
+            <p>Esta información la puedes encontrar en tu recibo de energía eléctrica</p>
+            
+            <select id="opciones" class="menu-desplegable">
+                <option value="">-- Selecciona --</option>
+                <option value="opcion1">Menos de 200 KWH</option>
+                <option value="opcion2">Entre 200KWH y 400KWH</option>
+                <option value="opcion3">Más de 400KWH</option>
+            </select>
 
-                <select id="opciones" class="menu-desplegable">
-                    <option value>-- Selecciona --</option>
-                    <option value="opcion1">Menos de 200 KWH</option>
-                    <option value="opcion2">Entre 200KWH y 400KWH</option>
-                    <option value="opcion3">Mas de 400KWH</option>
-                </select>
-
-                <div class="imagenRepre">
-                    <img
-                        src="/Images/foco.png"
-                        alt="Logo" width="500" height="500">
-                </div>
-
-                <h1>¿Utilizas energía renovable en tu hogar?</h1>
-                <form>
-                    <p>Selecciona una opción:</p>
-                    <label>
-                        <input type="radio" name="opcion" value="opcion1"
-                            checked>
-                        Si
-                    </label><br><br><br>
-
-                    <label>
-                        <input type="radio" name="opcion" value="opcion4">
-                        No
-                    </label>
-                </form>
-                <br><br><br>
-                <br><br>
-
-
-                </select>
-                <br><br><br>
-                <h1>¿Con que frecuencia utilizas aire acondicionado o
-                    calefacción?</h1>
-
-                <form>
-                    <p>Selecciona una opción:</p>
-                    <label>
-                        <input type="radio" name="opcion" value="opcion1"
-                            checked>
-                        Nunca
-                    </label><br><br><br>
-                    <label>
-                        <input type="radio" name="opcion" value="opcion4">
-                        Ocasionalmente
-                    </label><br><br><br>
-                    <label>
-                        <input type="radio" name="opcion" value="opcion5">
-                        Diariamente
-                    </label>
-                </form><br><br><br>
-                <h1>¿Qué tipo de fuente de energía utilizas principalmente?</h1>
-                <br><br><br>
-    <select id="energia" class="menu-desplegable">
-        <option value="">-- Selecciona --</option>
-        <option value="electricidad">Electricidad</option>
-        <option value="gas">Gas</option>
-        <option value="combustible">Combustible</option>
-        <option value="otros">Otros</option>
-    </select>
-     <!--Preguntas de transporte -->
+            <div class="imagenRepre">
+                <img src="/Images/foco.png" alt="Foco" width="500" height="500">
             </div>
 
-            <h1 class="titulo2">Seccion 2: Transporte </h1>
+            <h1>¿Utilizas energía renovable en tu hogar?</h1>
+            <form>
+                <p>Selecciona una opción:</p>
+                <label>
+                    <input type="radio" name="energia-renovable" value="si" checked> Sí
+                </label><br><br>
+                <label>
+                    <input type="radio" name="energia-renovable" value="no"> No
+                </label>
+            </form>
+            <br><br><br>
 
-            <div class="preguntas">
-                <h1>¿Cuántos kilómetros conduces a la semana?</h1>
-                <br><br><br>
-<!--                0-10 km, 11-50 km, > 50 km-->
-                <select id="kilometraje" class="menu-desplegable">
-                    <option value>-- Selecciona --</option>
-                    <option value="opcion1">0-10 km</option>
-                    <option value="opcion2">11-50 km </option>
-                    <option value="opcion3">Mas de 50 km </option>
-                </select>
-                <br><br><br>
-            <!-- -->
-                <h1>¿Cuántos kilómetros conduces a la semana?</h1>
-                <br><br><br>
-<!--                gasolina, diesel, hibrido, electrico-->
-                <select id="kilometraje" class="menu-desplegable">
-                    <option value>-- Selecciona --</option>
-                    <option value="opcion1">0-10 km</option>
-                    <option value="opcion2">11-50 km </option>
-                    <option value="opcion3">Mas de 50 km </option>
-                </select>
+            <h1>¿Con qué frecuencia utilizas aire acondicionado o calefacción?</h1>
+            <form>
+                <p>Selecciona una opción:</p>
+                <label>
+                    <input type="radio" name="uso-ac" value="nunca" checked> Nunca
+                </label><br><br>
+                <label>
+                    <input type="radio" name="uso-ac" value="ocasionalmente"> Ocasionalmente
+                </label><br><br>
+                <label>
+                    <input type="radio" name="uso-ac" value="diariamente"> Diariamente
+                </label>
+            </form>
+            <br><br><br>
+            <h1>¿Qué tipo de fuente de energía utilizas principalmente?</h1>
+            <br><br>
+            <select id="energia" class="menu-desplegable">
+                <option value="">-- Selecciona --</option>
+                <option value="electricidad">Electricidad</option>
+                <option value="gas">Gas</option>
+                <option value="combustible">Combustible</option>
+                <option value="otros">Otros</option>
+            </select>
+        </div>
 
+        <!-- Sección 2: Transporte -->
+        <h1 class="titulo2">Sección 2: Transporte</h1>
+        <p>Aquí se evalúa el uso de transporte que tiene mayor impacto en las emisiones:</p>
+        <div class="preguntas">
+            <h1>¿Cuántos kilómetros conduces a la semana?</h1>
+            <br><br>
+            <select id="kilometraje" class="menu-desplegable">
+                <option value="">-- Selecciona --</option>
+                <option value="0-10">0-10 km</option>
+                <option value="11-50">11-50 km</option>
+                <option value="mas50">Más de 50 km</option>
+            </select>
+            <div class="imagenRepre">
+                <img  id="camion" src="/Images/camion-transporte.png" alt="Foco" width="300" height="300">
             </div>
+            <h1>¿Qué tipo de vehículo utilizas?</h1>
+            <br><br>
+            <select id="tipo-vehiculo" class="menu-desplegable">
+                <option value="">-- Selecciona --</option>
+                <option value="gasolina">Gasolina</option>
+                <option value="diesel">Diésel</option>
+                <option value="hibrido">Híbrido</option>
+                <option value="electrico">Eléctrico</option>
+            </select>
+            <h1>¿Con qué frecuencia utilizas transporte público?</h1>
+            <br><br>
+            <select id="frecuencia_transp" class="menu-desplegable">
+                <option value="">-- Selecciona --</option>
+                <option value="diariamente">diareiamente</option>
+                <option value="semanalmente">semanalmente</option>
+                <option value="mensualmente">mensualmente</option>
+                <option value="nunca">nunca</option>
+            </select>
+            <br><br><br>
+        </div>
+    </main>
+</body>
 
-        </main>
-    </body>
 </html>
