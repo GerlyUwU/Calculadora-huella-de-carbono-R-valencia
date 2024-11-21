@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap"
+            rel="stylesheet">
+        <link rel="icon" href="/Images/favicon.png" type="image/png">
+        <link rel="stylesheet" href="/css/style.css">
+       
+        <title>Formulario Huella de Carbono</title>
+    </head>
+
+    <body>
+        <header>
+            <div class="logo">
+                <img
+                    src="/Images/kisspng-computer-icons-leaf-natural-environment-ecology-natureflower-5b322fa48ffc25.5248581315300156525898.png"
+                    alt="Logo" width="100" height="100">
+                <h2>R Valencia</h2>
+                <img id="logoSecundario" src="/Images/calculadora.png"
+                    alt="Logo" width="100" height="100">
+            </div>
+        </header>
+
+        <main>
+            <div class="titulo1">
+                <h1 id="title">Hora de empezar con esto...</h1>
+            </div>
+
+            <p id="subtituloMain">Responde a cada sección del siguiente
+                formulario para poder calcular tu huella de carbono</p>
+
+            <!-- Sección 1: Consumo de energía -->
+            <h1 class="titulo2">Sección 1: Consumo de Energía</h1>
+            <div class="preguntas">
+                <h1>¿Cuántos kilovatios hora (kWh) consumes al mes?</h1>
+                <p>Esta información la puedes encontrar en tu recibo de energía
+                    eléctrica</p>
+
+                <select id="opciones" class="menu-desplegable">
+                    <option value>-- Selecciona --</option>
+                    <option value="opcion1">Menos de 200 KWH</option>
+                    <option value="opcion2">Entre 200KWH y 400KWH</option>
+                    <option value="opcion3">Más de 400KWH</option>
+                </select>
+
+                <div class="imagenRepre">
+                    <img src="/Images/foco.png" alt="Foco" width="500"
+                        height="500">
+                </div>
+
+                <h1>¿Utilizas energía renovable en tu hogar?</h1>
+                <form>
+                    <p>Selecciona una opción:</p>
+                    <label>
+                        <input type="radio" name="energia-renovable" value="si"
+                            checked> Sí
+                    </label><br><br>
+                    <label>
+                        <input type="radio" name="energia-renovable" value="no">
+                        No
+                    </label>
+                </form>
+                <br><br><br>
+
+                <h1>¿Con qué frecuencia utilizas aire acondicionado o
+                    calefacción?</h1>
+                <form>
+                    <p>Selecciona una opción:</p>
+                    <label>
+                        <input type="radio" name="uso-ac" value="nunca" checked>
+                        Nunca
+                    </label><br><br>
+                    <label>
+                        <input type="radio" name="uso-ac"
+                            value="ocasionalmente"> Ocasionalmente
+                    </label><br><br>
+                    <label>
+                        <input type="radio" name="uso-ac" value="diariamente">
+                        Diariamente
+                    </label>
+                </form>
+                <br><br><br>
+                <h1>¿Qué tipo de fuente de energía utilizas principalmente?</h1>
+                <br><br>
+                <select id="energia" class="menu-desplegable">
+                    <option value>-- Selecciona --</option>
+                    <option value="electricidad">Electricidad</option>
+                    <option value="gas">Gas</option>
+                    <option value="combustible">Combustible</option>
+                    <option value="otros">Otros</option>
+                </select>
+            </div>
+
+            <!-- Sección 2: Transporte -->
+            <h1 class="titulo2">Sección 2: Transporte</h1>
+            <p>Aquí se evalúa el uso de transporte que tiene mayor impacto en
+                las emisiones:</p>
+            <div class="preguntas">
+                <h1>¿Cuántos kilómetros conduces a la semana?</h1>
+                <br><br>
+                <select id="kilometraje" class="menu-desplegable">
+                    <option value>-- Selecciona --</option>
+                    <option value="0-10">0-10 km</option>
+                    <option value="11-50">11-50 km</option>
+                    <option value="mas50">Más de 50 km</option>
+                </select>
+                <div class="imagenRepre">
+                    <img id="camion" src="/Images/camion-transporte.png"
+                        alt="Foco" width="300" height="300">
+                </div>
+                <h1>¿Qué tipo de vehículo utilizas?</h1>
+                <br><br>
+                <select id="tipo-vehiculo" class="menu-desplegable">
+                    <option value>-- Selecciona --</option>
+                    <option value="gasolina">Gasolina</option>
+                    <option value="diesel">Diésel</option>
+                    <option value="hibrido">Híbrido</option>
+                    <option value="electrico">Eléctrico</option>
+                </select>
+                <h1>¿Con qué frecuencia utilizas transporte público?</h1>
+                <br><br>
+                <select id="frecuencia_transp" class="menu-desplegable">
+                    <option value>-- Selecciona --</option>
+                    <option value="diariamente">diariamente</option>
+                    <option value="semanalmente">semanalmente</option>
+                    <option value="mensualmente">mensualmente</option>
+                    <option value="nunca">nunca</option>
+                </select>
+                <br><br><br>
+                <h1>¿Con qué frecuencia viajas en avión al año?</h1>
+                <br><br>
+                <select id="frecuencia_avion" class="menu-desplegable">
+                    <option value>-- Selecciona --</option>
+                    <option value="nunca">Nunca</option>
+                    <option value="1-2_veces">De 1 a 2 veces al año </option>
+                    <option value="3-5_veces">De 3 a 5 veces al año </option>
+                    <option value="mas_de_5_veces">Mas de 5 veces al año
+                    </option>
+                </select>
+                <br><br><br>
+            </div>
+            <div class="imagenRepre">
+                <img src="/Images/comida.png" alt="Foco" width="500"
+                    height="500">
+            </div>
+            <!-- Sección 3: Alimentacion  -->
+            <h1 class="titulo2">Sección 3: Alimentación</h1>
+            <p>La dieta también afecta la huella de carbono, especialmente el
+                consumo de carne:</p>
+            <div class="preguntas">
+                <h1>¿Con qué frecuencia consumes carne?</h1>
+                <br><br>
+                <select id="frecuencia_carne" class="menu-desplegable">
+                    <option value>-- Selecciona --</option>
+                    <option value="diario">Diario</option>
+                    <option value="semanalmente">Semanalmete </option>
+                    <option value="mensualmente">Mensualmente </option>
+                    <option value="Nunca">Nunca </option>
+                </select>
+                <br><br><br>
+                <h1>¿Consumes productos locales y de temporada?</h1>
+                <br><br>
+
+                <select id="productos_locales" class="menu-desplegable">
+                    <option value>-- Selecciona --</option>
+                    <option value="Siempre">Siempre</option>
+                    <option value="A veces ">A veces</option>
+                    <option value="Nunca">Nunca </option>
+                </select>
+                <br><br><br>
+                <h1>¿Qué tipo de dieta sigues?</h1>
+                <br><br>
+                <select id="dieta" class="menu-desplegable">
+                    <option value>-- Selecciona --</option>
+                    <option value="Omnivora">Omnivora </option>
+                    <option value="Vegetariana ">Vegetariana </option>
+                    <option value="Vegana">Vegana </option>
+                </select>
+                <br><br><br>
+            </div>
+            <!-- Sección 4: Compras y estilo de vida -->
+            <h1 class="titulo2">Sección 4: Compras y estilo de vida</h1>
+            <p id="calcio">Preguntas sobre hábitos de consumo y productos
+                adquiridos:</p>
+            <div class="imagenRepre">
+                <img src="/Images/compras.png" alt="Foco" width="500"
+                    height="500">
+            </div>
+            <div class="preguntas">
+                <h1>¿Con qué frecuencia compras ropa nueva?</h1>
+                <br><br>
+                <select id="frecuencia_compra_ropa" class="menu-desplegable">
+                    <option value>-- Selecciona --</option>
+                    <option value="1">Mensualmente </option>
+                    <option value="2">Cada 3-6 meses</option>
+                    <option value="3">Raramente</option>
+                </select>
+                <br><br><br>
+                <h1>¿Con qué frecuencia compras productos electrónicos?</h1>
+                <br><br>
+                <select id="frecuencia_compra_elect" class="menu-desplegable">
+                    <option value>-- Selecciona --</option>
+                    <option value="1">Mensualmente </option>
+                    <option value="2">Anuelmente</option>
+                    <option value="3">Solo cuando es necesario</option>
+                </select>
+                <br><br><br>
+                <h1>¿Reutilizas o reciclas productos en tu hogar?</h1>
+                <br><br>
+                <select id="frecuencia_reciclaje" class="menu-desplegable">
+                    <option value>-- Selecciona --</option>
+                    <option value="1">Siempre</option>
+                    <option value="2">A veces</option>
+                    <option value="3">Nunca</option>
+                </select>
+                <br><br><br>
+            </div>
+
+            <!-- Sección 5: Residuos  -->
+            <h1 class="titulo2">Sección 5: Residuos</h1>
+            <p>Preguntas para conocer la generación y manejo de residuos:</p>
+            <div class="imagenRepre">
+                <img src="/Images/basura.png" alt="Foco" width="500"
+                    height="500">
+            </div>
+            <div class="preguntas">
+                <h1>¿Separas tus residuos (orgánicos, plásticos, etc.)?</h1>
+                <br><br>
+                <select id="separar_residuos" class="menu-desplegable">
+                    <option value>-- Selecciona --</option>
+                    <option value="1">Siempre</option>
+                    <option value="2">A veces</option>
+                    <option value="3">Nunca</option>
+                </select>
+                <br><br><br>
+                <h1>¿Cuántas bolsas de basura generas por semana?</h1>
+                <br><br>
+                <select id="bolsas_basura" class="menu-desplegable">
+                    <option value>-- Selecciona --</option>
+                    <option value="1">1</option>
+                    <option value="2">2-3</option>
+                    <option value="3">Más de 3</option>
+                </select>
+                <br><br><br>
+                <h1>¿Compostas residuos orgánicos?</h1>
+                <form>
+                    <p>Selecciona una opción:</p>
+                    <label>
+                        <input type="radio" name="composta" value="Si" checked>
+                        Sí
+                    </label><br><br>
+                    <label>
+                        <input type="radio" name="composta" value="No">
+                        No
+                    </label><br><br>
+                </form>                
+                <br><br><br>
+            </div>
+            <div>
+                <button id="boton_calcular" type="submit">Calcular</button>
+            </div>
+            <br><br>
+        </main>
+        <footer class="footerMain">
+            <br>
+            <p>© 2024 - R Valencia. Todos los derechos reservados.</p>
+        </footer>
+        <script src="/js/formulario.js"></script>
+    </body>
+
+</html>

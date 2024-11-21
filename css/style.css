@@ -334,3 +334,226 @@ p {
     color: black;
 
 }
+
+#hola {
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 38.73px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+}
+
+#botones {
+    display: flex;
+    justify-content: flex-start;
+    /* Alinea los botones a la izquierda */
+    align-items: center;
+    /* Alinea verticalmente los botones al centro */
+    gap: 100px;
+    /* Espacio entre los botones */
+    margin-top: 20px;
+    margin-bottom: 10vh;
+    margin-left: 65%;
+}
+
+
+/* Estilo del botón */
+.boton_main {
+    display: flex;
+    /* Habilitar flexbox para centrar el contenido */
+    width: 202px;
+    /* Ancho fijo */
+    height: 58px;
+    /* Alto fijo */
+    padding: 14px 41px 15px 39px;
+    /* Espaciado interno */
+    justify-content: center;
+    /* Centrar contenido horizontalmente */
+    align-items: center;
+    /* Centrar contenido verticalmente */
+    flex-shrink: 0;
+    /* Evitar que el botón se reduzca */
+    border-radius: 3px;
+    /* Bordes redondeados */
+    background: #95BF39;
+    /* Color de fondo directo (verde maduro) */
+    color: #fff;
+    /* Color del texto */
+    border: none;
+    /* Sin borde */
+    cursor: pointer;
+    /* Cambiar el cursor al pasar sobre el botón */
+    font-family: 'Inter', sans-serif;
+    /* Tipografía */
+    font-size: 16px;
+    /* Tamaño de fuente (ajusta según sea necesario) */
+    margin-top: 20px;
+    /* Espacio entre el subtítulo y el botón */
+    margin-left: auto;
+    /* Margin left para centrar */
+    margin-right: auto;
+    /* Margin right para centrar */
+    opacity: 1;
+    /* Asegúrate de que sea visible */
+}
+
+#botones a {
+    text-decoration: none;
+    /* Elimina el subrayado del enlace */
+}
+
+/* Agregar un efecto al pasar el mouse (opcional) */
+.boton_main:hover {
+    opacity: 0.9;
+    /* Cambiar la opacidad al pasar el mouse (opcional) */
+}
+
+#logoSecundario {
+    margin-left: 73%;
+}
+
+.preguntas {
+    margin-top: 6%;
+    margin-left: 10%;
+}
+
+.preguntas h1 {
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29.05px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: black;
+
+}
+
+.preguntas p {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.36px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin-top: 3%;
+
+}
+
+.menu-desplegable {
+    display: block;
+    width: 100%;
+    max-width: 200px; /* Ajusta según sea necesario */
+    height: auto;
+    padding: 8px;
+    border: 1px solid #95BF39;
+    background-color: #f0f0f0;
+    color: #333;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 8%;
+    appearance: auto; /* Asegura que se muestre el estilo nativo del select */
+}
+
+
+.menu-desplegable:hover {
+    border-color: #75a628;
+    /* Cambia el color del borde al pasar el mouse */
+}
+
+.imagenRepre {
+
+    position: absolute;
+    opacity: 0.4;
+    z-index: 1; /* Las imágenes estarán detrás */
+    pointer-events: none; /* Deshabilita la interacción con las imágenes */
+
+}
+
+.imagenRepre img {
+    margin-left: 130%;
+}
+
+.preguntas input[type="radio"] {
+    accent-color: #95BF39;
+    /* Cambia el color del botón */
+    cursor: pointer;
+    /* Cambia el cursor al pasar por encima */
+}
+
+.preguntas label {
+    font-family: 'Inter', sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 19.36px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+}
+
+.titulo2{
+    text-align: center;
+    margin-left: 10%;
+}
+
+#camion{
+  margin-left: 250%;
+}
+
+.footerMain{
+    text-align: center;
+    background-color: #294028;
+    width: 100%;
+    height: 100px;
+
+}
+#calcio{
+    text-align: center;
+    margin-left: 8%;
+}
+
+#boton_calcular{
+    display: flex;
+    /* Habilitar flexbox para centrar el contenido */
+    width: 202px;
+    /* Ancho fijo */
+    height: 58px;
+    /* Alto fijo */
+    padding: 14px 41px 15px 39px;
+    /* Espaciado interno */
+    justify-content: center;
+    /* Centrar contenido horizontalmente */
+    align-items: center;
+    /* Centrar contenido verticalmente */
+    flex-shrink: 0;
+    /* Evitar que el botón se reduzca */
+    border-radius: 3px;
+    /* Bordes redondeados */
+    background: #0B591F;
+    /* Color de fondo directo (verde maduro) */
+    color: #fff;
+    /* Color del texto */
+    border: none;
+    /* Sin borde */
+    cursor: pointer;
+    /* Cambiar el cursor al pasar sobre el botón */
+    font-family: 'Inter', sans-serif;
+    /* Tipografía */
+    font-size: 16px;
+    /* Tamaño de fuente (ajusta según sea necesario) */
+    margin-top: 20px;
+    /* Espacio entre el subtítulo y el botón */
+    margin-left: auto;
+    /* Margin left para centrar */
+    margin-right: auto;
+    /* Margin right para centrar */
+    opacity: 1;
+    /* Asegúrate de que sea visible */
+  
+}
