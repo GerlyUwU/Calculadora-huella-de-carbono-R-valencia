@@ -472,12 +472,9 @@ p {
     opacity: 0.4;
     z-index: 1; /* Las imágenes estarán detrás */
     pointer-events: none; /* Deshabilita la interacción con las imágenes */
-
+    margin-left: 10%;
 }
 
-.imagenRepre img {
-    margin-left: 130%;
-}
 
 .preguntas input[type="radio"] {
     accent-color: #95BF39;

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado de la Huella de Carbono</title>
+</head>
+<body>
+    <header>
+        <h1>Resultado de tu Huella de Carbono</h1>
+    </header>
+    <main>
+        <p id="resultado">Cargando...</p>
+    </main>
+    <footer>
+        <p>© 2024 - R Valencia. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        // Extraer el parámetro "huella" de la URL
+        const params = new URLSearchParams(window.location.search);
+        const huella = params.get("huella");
+
+        // Mostrar el resultado
+        if (huella) {
+            document.getElementById("resultado").textContent = huella;
+        } else {
+            document.getElementById("resultado").textContent = "No se pudo calcular la huella de carbono.";
+        }
+    </script>
+</body>
+</html>

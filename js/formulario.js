@@ -1,6 +1,8 @@
 document.getElementById("boton_calcular").addEventListener("click", calcularHuellaDeCarbono);
 
-function calcularHuellaDeCarbono() {
+function calcularHuellaDeCarbono(event) {
+    event.preventDefault(); // Evita el comportamiento predeterminado del formulario
+
     // Inicializamos la huella de carbono en 0
     let huellaCarbono = 0;
 
@@ -74,6 +76,6 @@ function calcularHuellaDeCarbono() {
     else if (bolsasBasura === "3") huellaCarbono += 100;
     if (composta === "No") huellaCarbono += 50;
 
-    // Mostrar resultado
-    alert(`Tu estimación de huella de carbono es: ${huellaCarbono} puntos.`);
+    // Redirigir a la nueva página con el resultado
+    window.location.href = `resultado.html?huella=${encodeURIComponent(huellaCarbono)}`;
 }
