@@ -470,6 +470,8 @@ p {
 
     position: absolute;
     opacity: 0.4;
+    z-index: 1; /* Las imágenes estarán detrás */
+    pointer-events: none; /* Deshabilita la interacción con las imágenes */
 
 }
 
