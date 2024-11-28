@@ -1,7 +1,6 @@
 document.getElementById("boton_calcular").addEventListener("click", calcularHuellaDeCarbono);
 
 function calcularHuellaDeCarbono() {
-    // Inicializamos la huella de carbono en 0
     let huellaCarbono = 0;
 
     // Sección 1: Consumo de energía
@@ -74,6 +73,20 @@ function calcularHuellaDeCarbono() {
     else if (bolsasBasura === "3") huellaCarbono += 100;
     if (composta === "No") huellaCarbono += 50;
 
-    // Mostrar resultado
-    alert(`Tu estimación de huella de carbono es: ${huellaCarbono} puntos.`);
+    // Conversión a kg de CO₂ al mes
+    const factorConversion = 0.1; // Cada punto equivale a 0.1 kg de CO₂.
+    const co2Mensual = huellaCarbono * factorConversion;
+
+    // Definir el rango de huella de carbono
+    let rango;
+    if (co2Mensual < 100) {
+        rango = "baja";
+    } else if (co2Mensual <= 300) {
+        rango = "media";
+    } else {
+        rango = "alta";
+    }
+
+    const url = `resultado.html?co2=${co2Mensual.toFixed(2)}&rango=${rango}`;
+    window.location.href = url;
 }

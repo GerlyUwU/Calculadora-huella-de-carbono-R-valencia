@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Resultado de Huella de Carbono</title>
+        <style>
+        
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column; /* Apilar header y main */
+    color: white;
+    text-align: center;
+}
+
+/* Estilo para el header */
+header {
+   
+    color: white; /* Color del texto */
+    padding: 10px; /* Espaciado interno */
+    width: 100%; /* Ocupar todo el ancho */
+    box-sizing: border-box; /* Incluir padding en el ancho */
+}
+
+.logo {
+    display: flex; /* Flexbox para alinear elementos horizontalmente */
+    align-items: center; /* Centrar elementos verticalmente */
+    justify-content: space-between; /* Espaciado entre los elementos */
+}
+
+.logo img {
+    margin: 0 10px; /* Espaciado entre imágenes */
+}
+
+.logo h2 {
+    margin: 0; /* Quitar márgenes adicionales */
+    font-size: 24px; /* Ajustar tamaño de fuente */
+}
+
+/* Estilo para el contenido principal */
+main {
+    flex: 1; /* Tomar el espacio restante después del header */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+         
+        
+    </style>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img
+                    src="/Images/kisspng-computer-icons-leaf-natural-environment-ecology-natureflower-5b322fa48ffc25.5248581315300156525898.png"
+                    alt="Logo" width="100" height="100">
+                <h2>R Valencia</h2>
+                <img id="logoSecundario" src="/Images/calculadora.png"
+                    alt="Logo" width="100" height="100">
+            </div>
+        </header>
+        <main>
+            <div id="resultado">
+                <p id="mensaje"></p>
+            </div>
+
+            <script>
+        // Obtener los parámetros de la URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const co2Mensual = urlParams.get('co2');
+        const rango = urlParams.get('rango');
+
+        // Determinar el color de fondo según el rango
+        const body = document.body;
+        if (rango === "baja") {
+            body.className = "bajo";
+        } else if (rango === "media") {
+            body.className = "medio";
+        } else if (rango === "alta") {
+            body.className = "alto";
+        }
+
+        // Mostrar el resultado
+        const mensajeP = document.getElementById("mensaje");
+        mensajeP.textContent = `Tu estimación de huella de carbono es: ${co2Mensual} kg de CO₂ al mes. Tu rango es: ${rango.toUpperCase()}.`;
+    </script>
+        </main>
+    </body>
+</html>
